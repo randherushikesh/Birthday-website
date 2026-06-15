@@ -6,22 +6,47 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-width:100%;
-height:100vh;
-overflow:hidden;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
 
-background:
-linear-gradient(
-135deg,
-#ff9a9e,
-#fad0c4,
-#fad0c4,
-#fbc2eb
-);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-display:flex;
-justify-content:center;
-align-items:center;
+/* Background Image */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:url("images/background.jpg") center center no-repeat;
+    background-size:cover;
+
+    filter:blur(8px);
+    transform:scale(1.1);
+
+    z-index:-2;
+}
+
+/* Dark overlay for readability */
+body::after{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.25);
+
+    z-index:-1;
 }
 
 .container{
