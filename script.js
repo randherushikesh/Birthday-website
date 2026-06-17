@@ -35,7 +35,6 @@ Pig:"images/pig.jpg"
 // Unlock date: 30 July 2026, 11:59 PM
 const unlockDate = new Date("2026-06-17T22:40:00");
 
-
 if (new Date() < unlockDate) {
 
     const remaining = unlockDate - new Date();
@@ -60,7 +59,6 @@ if (new Date() < unlockDate) {
     start();
 
 }
-
 
 
 function start(){
