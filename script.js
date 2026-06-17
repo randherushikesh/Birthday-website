@@ -33,31 +33,39 @@ Pig:"images/pig.jpg"
 };
 
 // Unlock date: 30 July 2026, 11:59 PM
-const unlockDate = new Date("2026-06-17T22:59:00");
+const unlockDate = new Date("2026-07-30T23:59:00");
 
 if (new Date() < unlockDate) {
 
     const remaining = unlockDate - new Date();
-
     const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
 
     screen.innerHTML = `
         <div class="card">
             <h1>🎁 Surprise Locked</h1>
+
+            <img src="images/payment.jpg"
+                 alt="Pay ₹1"
+                 style="width:250px; border-radius:10px; margin:15px 0;">
+
             <p>
-                Hey Sakshi ❤️<br><br>
-                Your birthday surprise is not ready yet.<br><br>
-                Come back on <b>30 July at 11:59 PM</b>.
-            </p>
+    Hey Sakshi ❤️<br><br>
+    Start from 17/06/2026 <br><br>
+    To unlock the surprise, pay ₹4 until the date of the birthday comes 😢😥<br><br>
+    (If you miss 1 day of payment, the surprise will unlock on the birthday. To unlock it on that day you need to pay ₹500 as a penalty amount.) <br>
+    <p><b>The developer is also helpless in this case if you miss the payment</b></p>
+
+    <br><br>
+    Come back on <b>31 July at 12 AM</b>.
+</p>
+
 
             <h2>${days} days left ⏳</h2>
         </div>
     `;
 
 } else {
-
     start();
-
 }
 
 
