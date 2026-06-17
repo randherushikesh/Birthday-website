@@ -32,7 +32,36 @@ Elephant:"images/elephant.jpg",
 Pig:"images/pig.jpg"
 };
 
-start();
+// Unlock date: 30 July 2026, 11:59 PM
+const unlockDate = new Date("2026-06-17T22:40:00");
+
+
+if (new Date() < unlockDate) {
+
+    const remaining = unlockDate - new Date();
+
+    const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+
+    screen.innerHTML = `
+        <div class="card">
+            <h1>🎁 Surprise Locked</h1>
+            <p>
+                Hey Sakshi ❤️<br><br>
+                Your birthday surprise is not ready yet.<br><br>
+                Come back on <b>30 July at 11:59 PM</b>.
+            </p>
+
+            <h2>${days} days left ⏳</h2>
+        </div>
+    `;
+
+} else {
+
+    start();
+
+}
+
+
 
 function start(){
 
