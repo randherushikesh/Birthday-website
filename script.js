@@ -58,7 +58,7 @@ if (new Date() < unlockDate) {
 </p>
 
 
-            <h2>${days} days left ⏳</h2>
+            // <h2>${days} days left ⏳</h2>
         </div>
     `;
 
