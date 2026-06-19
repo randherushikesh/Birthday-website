@@ -33,7 +33,7 @@ Pig:"images/pig.jpg"
 };
 
 // Unlock date: 30 July 2026, 11:59 PM
-const unlockDate = new Date("2026-07-30T23:59:00");
+const unlockDate = new Date("2026-07-31T11:00:00");
 
 if (new Date() < unlockDate) {
 
@@ -51,12 +51,10 @@ if (new Date() < unlockDate) {
             <p>
     Hey Sakshi ❤️<br><br>
     Start from 17/06/2026 <br><br>
-    To unlock the surprise, pay ₹4 until the date of the birthday comes 😢😥<br><br>
-    (If you miss 1 day of payment, the surprise will unlock on the birthday. To unlock it on that day you need to pay ₹500 as a penalty amount.) <br>
-    <p><b>The developer is also helpless in this case if you miss the payment</b></p>
+   lock due to no payment on 19/06/2026 <br><br>
+   </p>
 
-    <br><br>
-    Come back on <b>31 July at 12 AM</b>.
+<br><br>
 </p>
 
 
