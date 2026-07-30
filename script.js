@@ -33,7 +33,7 @@ Pig:"images/pig.jpg"
 };
 
 // Unlock date: 30 July 2026, 11:59 PM
-const unlockDate = new Date("2026-07-31T11:00:00");
+const unlockDate = new Date("2026-07-30T11:59:00");
 
 if (new Date() < unlockDate) {
 
